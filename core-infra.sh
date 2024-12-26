@@ -7,7 +7,7 @@ if [ "$code" == "0x" ]; then
 fi
 
 # Deploy Dependencies
-
+printf 'Checking Dependencies...\n'
 # Safe Singleton 
 code=$(cast code 0x29fcB43b46531BcA003ddC8FCB67FFE91900C762 --rpc-url "$RPC_URL")
 if [ "$code" == "0x" ]; then
