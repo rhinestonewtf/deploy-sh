@@ -12,3 +12,15 @@ Simple shell scripts to deploy the core Rhinestone infrastructure. All deploymen
 2. Run `source .env` to set the env variables (note that the `export` command in the env is required so the env variables should be `export ENV=ENV_VALUE`)
 3. Run `chmod +x ./core-infra.sh` or for the relevant script
 4. Run `./core-infra.sh` or for the relevant script
+
+## Rhinestone deployment process
+
+All our contract deployments are permissionless and can be done by anyone. However, some initialization actions need to be made and are security critical, so these need to be made by us. Our process is as follows:
+
+1. Deploy core infra
+2. Deploy safe7579
+3. **On testnets only**: deploy testnet contracts
+4. Register schema and resolver on Registry [Rhinestone-only action]
+5. Deploy core modules
+6. Attest to core modules [Rhinestone-only action]
+7. **On testnets only**: upgrade schema and resolver for mock attester [Rhinestone-only action]
