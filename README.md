@@ -4,7 +4,9 @@ Simple shell scripts to deploy the core Rhinestone infrastructure. All deploymen
 
 - `core-infra.sh`: deploys the core infra including Registry and Attester
 - `safe7579.sh`: deploys the Safe7579 Adapter and Launchpad
+- `core-modules.sh`: deploys all the core modules including smart sessions
 - `testnets.sh`: deploys the testnet infra (note: this should only be done on testnets to avoid errors and security issues)
+- `misc.sh`: deploys various miscellaneous contracts
 
 ## Usage
 
