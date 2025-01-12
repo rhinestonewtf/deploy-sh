@@ -36,8 +36,6 @@ while IFS='=' read -r network url; do
     fi
 
     # Deploy modules
-    ##
-
     ## Smart Sessions Validator	0x00000000002B0eCfbD0496EE71e01257dA0E37DE	
     code=$(cast code 0x00000000002B0eCfbD0496EE71e01257dA0E37DE	--rpc-url "$expanded_url")
     if [ "$code" == "0x" ]; then
